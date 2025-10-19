@@ -10,6 +10,7 @@ public class Main {
         System.out.println("Billigste Tastatur: " + shop.getCheapestKeyboardPrice());
         System.out.println("Teuerster Gegenstand: " + shop.getPriciestItem());
         System.out.println("Teuerstes USB-Laufwerk, das Markus kaufen kann: " + shop.getUSBWithinBudget(markus.getBudget()));
+        System.out.println("Maximaler Geldbetrag, den Markus ausgeben kann: " + shop.getMaxSpendableAmount(markus.getBudget()));
     }
 
 }
