@@ -1,7 +1,7 @@
-public class Tastatur {
+public class Keyboard {
     private int price;
 
-    public Tastatur(int price) {
+    public Keyboard(int price) {
         this.price = price;
     }
 
