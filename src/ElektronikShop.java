@@ -56,6 +56,15 @@ public class ElektronikShop {
         return maxPriceUSBDrive;
     }
 
+    public int getUSBWithinBudget(int budget) {
+        int maxPrice = -1;
+        for (USBDrive usbDrive : usbDrives) {
+            int price = usbDrive.getPrice();
+            if (price <= budget && price > maxPrice)
+                maxPrice = price;
 
+        }
+        return maxPrice;
+    }
 
 }

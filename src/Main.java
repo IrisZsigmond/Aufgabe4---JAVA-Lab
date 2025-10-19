@@ -9,6 +9,7 @@ public class Main {
         ElektronikShop shop = new ElektronikShop(keyboards, usbDrives);
         System.out.println("Billigste Tastatur: " + shop.getCheapestKeyboardPrice());
         System.out.println("Teuerster Gegenstand: " + shop.getPriciestItem());
+        System.out.println("Teuerstes USB-Laufwerk, das Markus kaufen kann: " + shop.getUSBWithinBudget(markus.getBudget()));
     }
 
 }
