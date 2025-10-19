@@ -8,6 +8,7 @@ public class Main {
         ArrayList<USBDrive> usbDrives = new ArrayList<>(List.of(new USBDrive(20), new USBDrive(15), new USBDrive(40), new USBDrive(15)));
         ElektronikShop shop = new ElektronikShop(keyboards, usbDrives);
         System.out.println("Billigste Tastatur: " + shop.getCheapestKeyboardPrice());
+        System.out.println("Teuerster Gegenstand: " + shop.getPriciestItem());
     }
 
 }

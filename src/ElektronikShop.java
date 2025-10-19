@@ -38,6 +38,24 @@ public class ElektronikShop {
         return minPrice;
     }
 
+    public int getPriciestItem() {
+        int maxPriceKeyboard = Integer.MIN_VALUE;
+
+        for (Keyboard keyboard : keyboards)
+            if (keyboard.getPrice() > maxPriceKeyboard)
+                maxPriceKeyboard = keyboard.getPrice();
+
+        int maxPriceUSBDrive = Integer.MIN_VALUE;
+        for (USBDrive usbDrive : usbDrives)
+            if (usbDrive.getPrice() > maxPriceUSBDrive)
+                maxPriceUSBDrive = usbDrive.getPrice();
+
+        if (maxPriceKeyboard > maxPriceUSBDrive)
+            return maxPriceKeyboard;
+
+        return maxPriceUSBDrive;
+    }
+
 
 
 }
